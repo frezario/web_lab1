@@ -5,7 +5,7 @@ html, body {
     font-style: normal;
 }
 
-.blog_section1 {
+.blog_section_main {
     height: 100%;
     width: 100%;
     background-image: url("res/background.png");
