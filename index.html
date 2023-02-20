@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <section class="blog_section_1">
+        <header>
+            <div class="logo">Treloo</div>
+            <nav class="navigation_bar">
+                <ul>
+                    <button>Review</button>
+                    <button>Tips</button>
+                    <button>Alerts</button>
+                    <button>Blog</button>
+                    <button class="current_main_page_button">Blog</button>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="blog_section_1_title">
+            <h1>
+                Discover Your Life, Travel Where You Want
+            </h1>
+        </section>
+
+        <section class="blog_section_1_inscription">
+            <h4>
+                Would you explore nature paradise in the world, let’s find the best destination in world with us.
+            </h4>
+        </section>
+    </section>
+
+    <section class="blog_section_2">
+        <section class="searching_section">
+            <div class="tab">
+                <button class="tablinks active" onclick="openTab(event, 'flight')">
+                    <img src="res/plane-icon.png" alt="" width="20px" height="20px">
+                    Flight
+                </button>
+                <button class="tablinks" onclick="openTab(event, 'hotel')">
+                    <img src="res/hotel-icon.png" alt="" width="20px" height="20px">
+                    Hotel
+                </button>
+            </div>
+
+            <div id="flight" class="tabcontent" style="display: block;">
+                <h3>Flight</h3>
+                <p>Here's some information about flights.</p>
+            </div>
+
+            <div id="hotel" class="tabcontent">
+                <h3>Hotel</h3>
+                <p>Here's some information about hotels.</p>
+            </div>
+        </section>
+    </section>
+
+</body>
+
+</html>
