@@ -20,4 +20,4 @@ function openTab(evt, tabName) {
   }
 
   // Set the default tab to "Flight"
-  document.getElementById("defaultOpen").click();
+  document.getElementById("flightButton").click();
