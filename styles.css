@@ -92,11 +92,20 @@ header {
     justify-content: center;
 }
 
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
 .tab button {
-    background-color: transparent;
+    background-color: inherit;
+    float: left;
     border: none;
+    outline: none;
     cursor: pointer;
-    transition: background-color 0.3s;
+    padding: 14px 16px;
+    transition: 0.3s;
   }
 
   /* Set the active button */
@@ -108,3 +117,10 @@ header {
   .tab button:hover {
     background-color: #e6f2ff;
   }
+
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
