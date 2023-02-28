@@ -47,11 +47,11 @@ it was neccesary.
     <section class="blog_section">
         <section class="searching_section">
             <div class="tab">
-                <button class="tablinks" onclick="openTab(event, 'flight')" id="defaultOpen">
+                <button class="tablinks_searching_section" onclick="openTab(event, 'flight', 'tablinks_searching_section')" id="defaultOpen">
                     <img src="res/plane-icon.png" alt="" width="20px" height="20px">
                     Flight
                 </button>
-                <button class="tablinks" onclick="openTab(event, 'hotel')">
+                <button class="tablinks_searching_section" onclick="openTab(event, 'hotel', 'tablinks_searching_section')">
                     <img src="res/hotel-icon.png" alt="" width="20px" height="20px">
                     Hotel
                 </button>
@@ -119,18 +119,18 @@ it was neccesary.
                 Special Upcoming Offers
             </h2>
             <div class="tab">
-                <button class="tablinks active">
+                <button class="tablinks" onclick="openTab(event, 'Team', 'tablinks')" id="defaultOpen">
                     Team
                 </button>
-                <button class="tablinks">
+                <button class="tablinks" onclick="openTab(event, 'Couple', 'tablinks')">
                     Couple
                 </button>
-                <button class="tablinks">
+                <button class="tablinks" onclick="openTab(event, 'Couple', 'tablinks')">
                     Family
                 </button>
             </div>
 
-            <div id="team_offers" class="tabcontent">
+            <div id="team_offers" class="tabcontent" style="display: block;">
 
                 <article>
                     <img src="" alt="no img">

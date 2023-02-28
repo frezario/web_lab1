@@ -1,4 +1,4 @@
-function openTab(evt, tabName) {
+function openTab(evt, tabName, className) {
     // Declare all variables
     var i, tabcontent, tablinks;
 
@@ -9,7 +9,7 @@ function openTab(evt, tabName) {
     }
 
     // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
+    tablinks = document.getElementsByClassName(className);
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
@@ -20,4 +20,5 @@ function openTab(evt, tabName) {
   }
 
   // Set the default tab to "Flight"
-  document.getElementById("flightButton").click();
+document.getElementById("flightButton").click();
+document.getElementById("flightButton").click();
