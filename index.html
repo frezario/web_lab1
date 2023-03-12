@@ -62,20 +62,40 @@ it was neccesary.
     <section class="blog_section">
         <section id="offers_section">
             <h1 class="title">Special Upcoming Offers</h1>
-            <div>
-                <button onclick="openTab(event, 'family_tab', 'offers_section')">Family</button>
+            <div class="tab_section">
+                <button onclick="openTab(event, 'team_tab', 'offers_section')">Team</button>
                 <button onclick="openTab(event, 'couples_tab', 'offers_section')">Couples</button>
-                <button onclick="openTab(event, 'solo_tab', 'offers_section')">Solo</button>
+                <button onclick="openTab(event, 'family_tab', 'offers_section')">Family</button>
             </div>
-            <div>
-                <div id="family_tab" class="tab active">
-                    <p>Family offers content goes here.</p>
+            <div class="content_section">
+                <div id="team_tab" class="tab active">
+                    <article class="offer">
+                        <div class="main">
+                            <img src="res/photos/unsplash_7uXn7nudorc.png" alt="">
+                            <p class="date">14 FEB 2022</p>
+                        </div>
+                        <div class="subscription">
+                            <div class="upper">
+                                <div class="type">Relax</div>
+                                <div class="type">3 Days, 3 Nights</div>
+                            </div>
+                            <div class="mid">
+                                Loga Sea
+                            </div>
+                            <div class="lower">
+                                <div class="price">
+                                    <h4>700$</h4>/Person
+                                </div>
+                                <button>Book Now</button>
+                            </div>
+                        </div>
+                    </article>
                 </div>
                 <div id="couples_tab" class="tab">
                     <p>Couples offers content goes here.</p>
                 </div>
-                <div id="solo_tab" class="tab">
-                    <p>Solo offers content goes here.</p>
+                <div id="family_tab" class="tab">
+                    <p>Family offers content goes here.</p>
                 </div>
             </div>
         </section>
