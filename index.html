@@ -39,179 +39,44 @@ it was neccesary.
 
         <section class="blog_section_1_inscription">
             <h4>
-                Would you explore nature paradise in the world, let’s find the best destination in world with us.
+                Would you explore nature paradise in the world? Let’s find the best destination in world with us.
             </h4>
         </section>
     </section>
 
+    <section id="searching_section">
+        <div>
+            <button onclick="openTab(event, 'flight_tab', 'searching_section')">Flight</button>
+            <button onclick="openTab(event, 'hotel_tab', 'searching_section')">Hotel</button>
+        </div>
+        <div>
+            <div id="flight_tab" class="tab active">
+                <p>Flight search content goes here.</p>
+            </div>
+            <div id="hotel_tab" class="tab">
+                <p>Hotel search content goes here.</p>
+            </div>
+        </div>
+    </section>
+
     <section class="blog_section">
-        <section class="searching_section">
-            <div class="tab">
-                <button class="tablinks_searching_section" onclick="openTab(event, 'flight', 'tablinks_searching_section')" id="defaultOpen">
-                    <img src="res/plane-icon.png" alt="" width="20px" height="20px">
-                    Flight
-                </button>
-                <button class="tablinks_searching_section" onclick="openTab(event, 'hotel', 'tablinks_searching_section')">
-                    <img src="res/hotel-icon.png" alt="" width="20px" height="20px">
-                    Hotel
-                </button>
+        <section id="offers_section">
+            <div>
+                <button onclick="openTab(event, 'family_tab', 'offers_section')">Family</button>
+                <button onclick="openTab(event, 'couples_tab', 'offers_section')">Couples</button>
+                <button onclick="openTab(event, 'solo_tab', 'offers_section')">Solo</button>
             </div>
-
-            <div id="flight" class="tabcontent" style="display: block;">
-                <section class="from_to_section">
-                    <div>
-                        <p>Living from</p>
-                    </div>
-
-                    <select>
-                        Dubai
-                    </select>
-
-                    <img src="res/plane-icon.png" alt="">
-
-                    <div>
-                        <p>Going to</p>
-                    </div>
-
-                    <select>
-                        New York
-                    </select>
-
-                </section>
-
-                <section class="date_time_section">
-
-                    <div>
-                        <p>Leave</p>
-                        <img src="res/plane-icon.png" alt="">
-                    </div>
-
-                    <input type="datetime">
-                    23 Jan, Sat
-                    </select>
-
-                    <img src="res/plane-icon.png" alt="">
-
-                    <div>
-                        <p>Return</p>
-                        <img src="res/plane-icon.png" alt="">
-                    </div>
-
-                    <select>
-                        14 Jan, Thu
-                    </select>
-
-                </section>
-
-                <button class="search_button">
-
-                </button>
-
+            <div>
+                <div id="family_tab" class="tab active">
+                    <p>Family offers content goes here.</p>
+                </div>
+                <div id="couples_tab" class="tab">
+                    <p>Couples offers content goes here.</p>
+                </div>
+                <div id="solo_tab" class="tab">
+                    <p>Solo offers content goes here.</p>
+                </div>
             </div>
-
-            <div id="hotel" class="tabcontent">
-                Hotel Tab
-            </div>
-        </section>
-
-        <section class="offers_section">
-            <h2>
-                Special Upcoming Offers
-            </h2>
-            <div class="tab">
-                <button class="tablinks" onclick="openTab(event, 'Team', 'tablinks')" id="defaultOpen">
-                    Team
-                </button>
-                <button class="tablinks" onclick="openTab(event, 'Couple', 'tablinks')">
-                    Couple
-                </button>
-                <button class="tablinks" onclick="openTab(event, 'Couple', 'tablinks')">
-                    Family
-                </button>
-            </div>
-
-            <div id="team_offers" class="tabcontent" style="display: block;">
-
-                <article>
-                    <img src="" alt="no img">
-                    <p class="datetime">14 Feb 2022</p>
-
-                    <p class="type">
-                        Relax
-                    </p>
-
-                    <p class="duration">
-                        3 days, 3 nights
-                    </p>
-
-                    <h3 class="name">
-                        Loga Sea
-                    </h3>
-
-                    <div class="price">
-                        <p class="money">700$</p>
-                        <p>/Person</p>
-                    </div>
-
-                    <button class="book_button">
-                        Book Now
-                    </button>
-                </article>
-
-                <article>
-                    <img src="" alt="no img">
-                    <p class="datetime">14 Feb 2022</p>
-
-                    <p class="type">
-                        Relax
-                    </p>
-
-                    <p class="duration">
-                        3 days, 3 nights
-                    </p>
-
-                    <h3 class="name">
-                        Loga Sea
-                    </h3>
-
-                    <div class="price">
-                        <p class="money">700$</p>
-                        <p>/Person</p>
-                    </div>
-
-                    <button class="book_button">
-                        Book Now
-                    </button>
-                </article>
-
-                <article>
-                    <img src="" alt="no img">
-                    <p class="datetime">14 Feb 2022</p>
-
-                    <p class="type">
-                        Relax
-                    </p>
-
-                    <p class="duration">
-                        3 days, 3 nights
-                    </p>
-
-                    <h3 class="name">
-                        Loga Sea
-                    </h3>
-
-                    <div class="price">
-                        <p class="money">700$</p>
-                        <p>/Person</p>
-                    </div>
-
-                    <button class="book_button">
-                        Book Now
-                    </button>
-                </article>
-
-            </div>
-
         </section>
     </section>
 

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search and Offers Sections</title>
+	<style>
+		.tab {
+			display: none;
+		}
+		.tab.active {
+			display: block;
+		}
+		#searching_section button.active {
+			background-color: red;
+			color: white;
+		}
+		#offers_section button.active {
+			background-color: blue;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<section id="searching_section">
+		<div>
+			<button onclick="openTab(event, 'flight_tab', 'searching_section')">Flight</button>
+			<button onclick="openTab(event, 'hotel_tab', 'searching_section')">Hotel</button>
+		</div>
+		<div>
+			<div id="flight_tab" class="tab active">
+				<p>Flight search content goes here.</p>
+			</div>
+			<div id="hotel_tab" class="tab">
+				<p>Hotel search content goes here.</p>
+			</div>
+		</div>
+	</section>
+	<section id="offers_section">
+		<div>
+			<button onclick="openTab(event, 'family_tab', 'offers_section')">Family</button>
+			<button onclick="openTab(event, 'couples_tab', 'offers_section')">Couples</button>
+			<button onclick="openTab(event, 'solo_tab', 'offers_section')">Solo</button>
+		</div>
+		<div>
+			<div id="family_tab" class="tab active">
+				<p>Family offers content goes here.</p>
+			</div>
+			<div id="couples_tab" class="tab">
+				<p>Couples offers content goes here.</p>
+			</div>
+			<div id="solo_tab" class="tab">
+				<p>Solo offers content goes here.</p>
+			</div>
+		</div>
+	</section>
+	<script>
+		function openTab(event, tabName, sectionId) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.querySelectorAll('#' + sectionId + ' .tab');
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].classList.remove("active");
+			}
+			tablinks = event.currentTarget.parentNode.querySelectorAll('button');
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].classList.remove("active");
+			}
+			document.getElementById(tabName).classList.add("active");
+			event.currentTarget.classList.add("active");
+		}
+	</script>
+</body>
+</html>
