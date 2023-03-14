@@ -71,7 +71,7 @@ html, body {
 }
 
 .blog_section {
-    height: 100%;
+    height: 120%;
     width: 100%;
     background-color: #E5E5E5;
 }
@@ -100,6 +100,11 @@ html, body {
 
 .tab.active {
     display: block;
+}
+
+#searching_section {
+    width: 100%;
+    height: auto;
 }
 
 #searching_section button {
@@ -133,13 +138,12 @@ html, body {
 /* OFFERS SECTION */
 
 #offers_section {
-    padding-top: 15vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    /* text-align: center; */
+    /* height: 80%; */
 }
 
 #offers_section .title {
@@ -195,7 +199,6 @@ html, body {
     flex-direction: column;
     margin: 0 2%;
     padding: 1%;
-
 }
 
 #offers_section .content_section #team_tab .offer .main {
@@ -207,17 +210,17 @@ html, body {
 }
 
 #offers_section .content_section #team_tab .offer .main img {
-    width: 18vw;
+    width: 80%;
     height: auto;
 }
 
 #offers_section .content_section #team_tab .offer .main .date {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    letter-spacing: 0.5em;
     display: flex;
     align-items: center;
-    /* width: 50%; */
-    transform-origin: 50% 50%;
-    transform: rotate(90deg);
-    margin: 0;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 #offers_section .content_section #team_tab .offer .upper {
@@ -234,6 +237,8 @@ html, body {
     padding: 2%;
     background-color: #FCDDEC;
     color: #F178B6;
+    font-size: 1.2vmax;
+    height: 80%;
 }
 
 
@@ -243,7 +248,7 @@ html, body {
 }
 
 #offers_section .content_section #team_tab .offer .mid {
-    font-size: 2vmax;
+    font-size: 1.5vmax;
     padding-left: 5%;
 }
 
@@ -254,6 +259,7 @@ html, body {
     align-items: center;
     padding-left: 5%;
 }
+
 #offers_section .content_section #team_tab .offer .lower button {
     background-color: #F2F6FF;
     border: none;
@@ -261,4 +267,63 @@ html, body {
     color: #3E86F5;
     padding: 0 7%;
     height: 8vh;
+}
+
+.achievements {
+    /* top: 20%; */
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* transform: translate(0%, 30%); */
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.blog_section .achievements .box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0 10%; */
+    flex-direction: column;
+    padding: 0 2%;
+}
+
+.blog_section .achievements .box img {
+    /* padding: 10%; */
+    width: 70%;
+    height: auto;
+}
+
+
+.blog_section .achievements .box h1 {
+    /* width: 80%; */
+    font-size: 3vmax;
+}
+
+.blog_section .achievements .box p {
+    color: rgba(0, 0, 0, 0.5);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3vmax;
+    line-height: 200%;
+}
+
+.blog_section .achievements .box button {
+    border: none;
+    background-color: #3E86F5;
+    color: white;
+    line-height: 250%;
+    padding: 2% 5%;
+    border-radius: 10px;
+}
+
+#destinations_section {
+    width: 100%;
+    height: 100%;
 }
