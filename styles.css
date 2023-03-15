@@ -36,7 +36,9 @@ html, body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1.5vmax;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     border-radius: 10px;
@@ -378,7 +380,7 @@ html, body {
 #destinations_section .content_section .content {
     display: flex;
     align-items: center;
-    gap: 20px; 
+    gap: 20px;
 }
 
 #destinations_section .content .destination {
@@ -395,7 +397,7 @@ html, body {
 #destinations_section .content .destination .image img {
     display: block;
     max-width: 100%;
-  }
+}
 
 #destinations_section .content .destination .image .rating {
     position: absolute;
@@ -489,7 +491,7 @@ html, body {
 .responds_section .content .image img {
     display: block;
     max-width: 100%;
-  }
+}
 
 .responds_section .content .image .rating {
     position: absolute;
@@ -520,4 +522,94 @@ html, body {
     border-radius: 15px;
     height: 40px;
     width: 40px;
+}
+
+/* Discount section */
+
+.discount_section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.discount_section .image_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0% 20%;
+}
+
+.discount_section .image_container img {
+    width: 80%;
+    height: auto;
+    position: absolute;
+    z-index: 0;
+}
+
+.discount_section .image_container h1 {
+    font-weight: 600;
+    font-size: 3vmax;
+    line-height: 72px;
+    text-align: center;
+    z-index: 1;
+    color: #FFFFFF;
+}
+
+.discount_section .image_container .register_button {
+    border: none;
+    background-color: white;
+    border-radius: 25px;
+    width: 30%;
+    padding: 3% 0;
+    z-index: 1;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #3E86F5;
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    font-style: normal;
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 42px;
+    color: rgba(0, 0, 0, 0.5);    
+}
+
+footer .navigation_bar {
+    display: flex;
+    margin-right: 5vw;
+}
+
+footer .navigation_bar button {
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: rgba(0, 0, 0, 0.75);
+
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+footer .navigation_bar button:hover {
+    background-color: #ffffff;
+    color: #3E86F5;
 }
