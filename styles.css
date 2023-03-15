@@ -504,3 +504,20 @@ html, body {
     width: fit-content;
     height: 20%;
 }
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+}
+
+.slider .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(62, 134, 245, 0.5);
+    border-radius: 15px;
+    height: 40px;
+    width: 40px;
+}
