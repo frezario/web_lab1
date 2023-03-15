@@ -269,6 +269,8 @@ html, body {
     height: 8vh;
 }
 
+/* ACHIEVEMENTS SECTION */
+
 .achievements {
     /* top: 20%; */
     width: 80%;
@@ -323,7 +325,59 @@ html, body {
     border-radius: 10px;
 }
 
+/* DESTINATIONS SECTION */
+
 #destinations_section {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#destinations_section .title {
+    font-size: 3vmax;
+}
+
+#destinations_section .tab_section {
+    background-color: white;
+    border-radius: 10px;
+    width: 22vw;
+    height: 7vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 250px;
+    min-height: auto;
+}
+
+#destinations_section .tab_section button {
+    border: none;
+    width: 30%;
+    height: 6vh;
+    /* background-color: transparent; */
+    text-align: center;
+    border-radius: 10px;
+    font-size-adjust: inherit;
+}
+
+#destinations_section .tab_section button.active {
+    background-color: #3E86F5;
+    color: white;
+}
+
+#destinations_section .tab_section button:hover {
+    background-color: lightblue;
+}
+
+#destinations_section .content_section #team_tab {
+    margin-top: 4vh;
+}
+
+#destinations_section .content_section .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
 }
